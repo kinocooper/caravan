@@ -108,6 +108,11 @@ main {
   justify-content: flex-start;
 }
 
+.blog-item:last-child {
+  padding-bottom: 0px;
+  border-bottom: 0px;
+}
+
 .blog-image {
   height: 180px;
 }
@@ -229,4 +234,73 @@ footer {
 
 .footer-text {
   color: #fff;
+}
+
+@media screen and (max-width: 425px) {
+  .social {
+    display: none;
+  }
+
+  .nav-list-item {
+    display: block;
+    margin: 0 0 10px 0;
+  }
+
+  .main-visual-content {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  .blog {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .blog-box {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .blog-image {
+    width: 49%;
+  }
+
+  .blog-text {
+    width: 49%;
+    padding-top: 5px;
+  }
+
+  /*　サンプル画像ではカテゴリ表示が消えてるが、必要なさそう。
+  .category {
+    display: none;
+  }
+*/
+
+  .sidebar {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .pagination {
+    padding-bottom: 50px;
+  }
+
+  .instagram .sidebar-contents {
+    justify-content: center;
+  }
+
+  .instagram-box {
+    width: 45%;
+    padding-top: 45%;
+    margin-bottom: 5%;
+  }
+
+  .instagram-box:nth-child(odd) {
+    margin-right: 5%;
+  }
 }
